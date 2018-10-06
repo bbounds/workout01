@@ -9,14 +9,14 @@ output: github_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-#Loading Packages
+###Loading Packages
 ```{r}
 library(readr)
 library(dplyr)
 library(ggplot2)
 ```
 
-#Loading Data
+###Loading Data
 ```{r}
 dat <- read_csv('../data/nba2018-teams.csv')
 ```
@@ -57,6 +57,8 @@ ggsave(filename = "workout01-bailey-bounds_files/rank_team_by_eff.pdf", width = 
 ```
 
 ###My own Ranking system
+
+**I chose to rank teams by score per minute simply because in order to win you have to score the most points**
 ```{r}
 dat <- mutate(dat, SPM = points/minutes)
 
@@ -71,9 +73,8 @@ ggplot(data = rank_team_by_SPM, aes(x = reorder(team, total_SPM), y = total_SPM)
 ggsave(filename = "workout01-bailey-bounds_files/rank_team_by_spm.pdf", width = 7, height = 5)
 ```
 
-* I chose to rank teams by score per minute simply because in order to win you have to score the most points
- 
-#Comments and Reflections:
+
+###Comments and Reflections:
  
  * Yes this was my first time, and this file structure makes sense to me
  * Yes, and yes it is important since everyone's file structure on their computer is very different so controlling for that by just moving inside the project directory makes lots of sense
