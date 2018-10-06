@@ -1,4 +1,4 @@
-**Title: NBA 2018 Data Dictionary**
+**NBA 2018 Data Dictionary:**
 
 **Description:**
 This data contains various statistics of playaers in the NBA 2018 season.
