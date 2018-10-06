@@ -1,8 +1,11 @@
 ###Title: NBA 2018 Data Dictionary
+
 ####Description:
 This data contains various statistics of playaers in the NBA 2018 season.
+
 ####Main Source:
 www.basketball-reference.com
+
 ####Sample data from GSW:
 https://www.basketball-reference.com/teams/GSW/2018.html
 
